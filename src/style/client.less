@@ -1,0 +1,54 @@
+@import "./colorConfig.less";
+
+
+.mainClient{
+    width: 360px;
+    height: 420px;
+    background-color: @mainClientColor;
+    margin: 100px auto;
+    border:  10px solid  black;
+    border-radius: 40px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-around;
+    .stage{
+        width: 304px;
+        height: 304px;
+        border: 2px solid black;
+        position: relative;
+        .snake{
+            &>div{
+                width: 10px;
+                height: 10px;
+                border-radius: 1px ;
+                border: 1px solid @mainClientColor;
+                background-color: black;
+                position: absolute;
+            }
+        }
+        #food{
+                width: 10px;
+                height: 10px;
+                position: absolute;
+                top:100px;
+                left: 100px;
+                display: flex;
+                flex-flow:row wrap;
+                justify-content: space-between;
+                align-content: space-between;
+                &>div{
+                    width: 4px;
+                    height: 4px;
+                    background-color: black;
+                    transform: rotate(45deg);
+                }
+        }
+    }
+    .score-panel{
+        width: 280px;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+}

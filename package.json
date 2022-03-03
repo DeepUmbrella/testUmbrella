@@ -1,0 +1,12 @@
+{
+
+    "version": "1.0.0",
+    "description": "A Demo Of Gluttonous Snake",
+    "name": "my-gluttonous-snake-demo",
+    "scripts": {
+        "serve": "webpack serve ",
+        "build": "webpack --mode=production --node-env=production",
+        "watch": "webpack --watch"
+
+    }
+}
